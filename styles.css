@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(225, 220, 245);
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 100px); /* Réduire la taille des colonnes pour s'adapter à la fenêtre */
+  grid-gap: 5px;
+  background-color: #3498db;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 600px;
+  background-size: 50px;
+  
+}
+
+.scores {
+  text-align: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+#resetButton {
+  height: 50px;
+}
+
